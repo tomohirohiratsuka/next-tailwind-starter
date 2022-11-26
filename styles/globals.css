@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white
+}
+
+/*https://github.com/apexcharts/apexcharts.js/issues/3387#issuecomment-1264530985*/
+.apexcharts-canvas > svg {
+  background-color: transparent !important;
+}
